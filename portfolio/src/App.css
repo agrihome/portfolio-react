@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,6 +9,7 @@
   /* Background Colors */
   --color-background-primary: #0A0F1A;
   --color-background-secondary: #030509;
+  --color-background-header: #131C27;
  
   
   /* Text Colors */
@@ -26,9 +28,30 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Left to Right Transition for Nav Links */
+.nav-link-transition {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-transition::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-highlight);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-link-transition:hover::after {
+  transform: scaleX(1);
 }
