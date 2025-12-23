@@ -85,7 +85,7 @@ function ContactBlock({ icon, value, heading }) {
       </div>
 
       <div className="flex flex-col items-start h-full justify-center gap-3">
-        <H4 className="text-white">{heading}</H4>
+        <H4 className="text-white font-bold">{heading}</H4>
         <Text>{value}</Text>
       </div>
     </div>
