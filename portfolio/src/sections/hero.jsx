@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen py-20 grid grid-cols-2 gap-12 items-center"
+      className="pt-40 pb-20 grid grid-cols-2 gap-12 items-center"
     >
       <div className=" flex flex-col justify-center gap-12 pr-2">
         <div>
