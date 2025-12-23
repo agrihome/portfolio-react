@@ -47,7 +47,7 @@ export default function Header() {
       </div>
 
       <span className="inline-flex w-20 h-20 bg-highlight items-center justify-center">
-        <Menu className="bg-highlight h-9 w-9" />
+        <Menu className="bg-highlight h-9 w-9 fill-background-header stroke-background-header" />
       </span>
     </div>
   );
