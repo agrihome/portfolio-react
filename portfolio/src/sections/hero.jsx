@@ -10,7 +10,7 @@ export default function Hero() {
       id="home"
       className="min-h-screen py-20 grid grid-cols-2 gap-12 items-center"
     >
-      <div className=" flex flex-col justify-center gap-6 pr-2">
+      <div className=" flex flex-col justify-center gap-12 pr-2">
         <div>
           <H1 className="text-white">Hi, I'm ADHI!</H1>
           <H1 className="text-white">
