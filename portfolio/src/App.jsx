@@ -4,6 +4,7 @@ import Hero from "./sections/hero";
 import Skills from "./sections/skills";
 import Contact from "./sections/contact";
 import Certificates from "./sections/certificates";
+import Projects from "./sections/projects";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="bg-background-primary overflow-hidden">
       <Header />
       <Hero />
+      <Projects />
       <Skills />
       <Certificates />
       <Contact />

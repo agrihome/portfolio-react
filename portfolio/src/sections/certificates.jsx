@@ -28,15 +28,11 @@ const certificates = [
 export default function Certificates() {
   return (
     <Provider className="bg-background-secondary">
-      <section id="certificates" className="py-20">
+      <section id="certificates" className="py-20 flex flex-col items-start">
         <H4 className="text-center text-highlight">My certificates</H4>
-        <H2>
-          Courses that made
-          <br />
-          me what I'm
-        </H2>
+        <H2 className="mt-2 text-white">Courses that made me what I'm</H2>
 
-        <div className="flex justify-between gap-8 overflow-scroll mt-24 hide-scrollbar">
+        <div className="flex justify-between gap-8 overflow-scroll w-full mt-18 hide-scrollbar">
           {certificates.map((certificate) => {
             return <CertificateBlock {...certificate} />;
           })}
