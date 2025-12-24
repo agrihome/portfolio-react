@@ -8,17 +8,18 @@ import bannerImg from "../assets/banner.png";
 import Provider from "../components/Provider";
 import Reveal from "../components/Reveal";
 
-const animatedList = ["DEVELOPER", "CODER"];
+const animatedList = ["DEVELOPER", "CODER", "PLAYER"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
-    }, 2000);
-    return () => clearInterval(timer);
-  }, []);
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
+  //   }, 1000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   return (
     <Provider className="bg-background-primary">
@@ -32,7 +33,7 @@ export default function Hero() {
               <H1 className="text-white">Hi, I'm ADHI!</H1>
               <H1 className="text-white flex items-center gap-4 flex-wrap">
                 CREATIVE{" "}
-                <span className="relative h-[72px] min-w-[200px] flex items-center">
+                <span className="relative h-[52px] min-w-[250px] flex items-center">
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={animatedList[index]}
