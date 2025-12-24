@@ -2,7 +2,7 @@ import Provider from "../components/Provider";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
 import H4 from "../components/H4";
-import Text from "../components/TEXT";
+import Text from "../components/Text";
 import Button from "../components/Button";
 import { Globe } from "lucide-react";
 import ExclusiveImg from "../assets/exclusive.png";
@@ -14,8 +14,11 @@ export default function Projects() {
   return (
     <Provider className="bg-background-primary">
       <section id="projects" className="py-20">
-        <H4 className="text-center text-highlight">Projects</H4>
-        <H2>My recent works</H2>
+
+        <div className="flex flex-col items-center">
+          <H4 className="text-center text-highlight">Projects</H4>
+          <H2 className="text-center text-white">My recent works</H2>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-18 not-first:">
           <Exclusive />

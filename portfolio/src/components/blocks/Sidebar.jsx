@@ -52,7 +52,7 @@ export default function Sidebar({ isOpen, onClose }) {
               </button>
             </div>
 
-            <nav className="flex flex-col gap-8 lg-hidden">
+            <nav className="flex flex-col gap-8 lg:hidden">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

@@ -44,10 +44,13 @@ export default function Skills() {
   return (
     <Provider className="bg-background-primary">
       <section className="py-20" id="experience">
-        <H4 className="text-center text-highlight">Experience & Skill</H4>
-        <H2>
-          Showcasing your talent <br /> amplifying your impact
-        </H2>
+        <div className="flex flex-col items-start">
+          <H4 className="text-center text-highlight">Experience & Skill</H4>
+          <H2 className="mt-4 text-white">
+             My hands on knowledge and area of expertise
+          </H2>
+        </div>
+
         <div className="mt-20 grid lg:grid-cols-2">
           <Experience
             startYear={"Mar"}
@@ -57,7 +60,10 @@ export default function Skills() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2  mt-20 gap-y-12 gap-x-5" id="skills">
+        <div
+          className="grid md:grid-cols-2  mt-20 gap-y-12 gap-x-5"
+          id="skills"
+        >
           {skills.map((skill) => (
             <SkillBlock skill={skill.skill} rating={skill.rating} />
           ))}
