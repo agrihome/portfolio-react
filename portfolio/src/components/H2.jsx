@@ -1,7 +1,7 @@
 export default function H2({ children, className = "" }) {
   return (
     <h2
-      className={`font-[Poppins,sans-serif] text-[48px] font-semibold leading-[62.4px] text-white${className}`}
+      className={`font-[Poppins,sans-serif] text-[28px] md:text-[48px] font-semibold md:leading-[62.4px] leading-[35px] text-white${className} pt-5 md:pt-0`}
     >
       {children}
     </h2>
