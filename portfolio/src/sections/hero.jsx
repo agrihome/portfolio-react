@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import H1 from "../components/H1";
 import Text from "../components/Text";
 import Button from "../components/Button";
@@ -6,7 +8,18 @@ import bannerImg from "../assets/banner.png";
 import Provider from "../components/Provider";
 import Reveal from "../components/Reveal";
 
+const animatedList = ["DEVELOPER", "CODER"];
+
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <Provider className="bg-background-primary">
       <section
@@ -17,8 +30,31 @@ export default function Hero() {
           <div className=" flex flex-col justify-center gap-12 pr-2">
             <div>
               <H1 className="text-white">Hi, I'm ADHI!</H1>
-              <H1 className="text-white">
-                CREATIVE <span className="text-highlight">CODER</span>
+              <H1 className="text-white flex items-center gap-4 flex-wrap">
+                CREATIVE{" "}
+                <span className="relative h-[72px] min-w-[200px] flex items-center">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={animatedList[index]}
+                      initial={{ rotateX: 90, opacity: 0 }}
+                      animate={{ rotateX: 0, opacity: 1 }}
+                      exit={{ rotateX: -90, opacity: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        type: "spring",
+                        stiffness: 100,
+                        damping: 12,
+                      }}
+                      style={{
+                        transformOrigin: "bottom",
+                        display: "inline-block",
+                      }}
+                      className="text-highlight absolute left-0 font-extrabold"
+                    >
+                      {animatedList[index]}
+                    </motion.span>
+                  </AnimatePresence>
+                </span>
               </H1>
             </div>
 
