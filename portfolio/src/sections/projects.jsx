@@ -17,7 +17,7 @@ export default function Projects() {
         <H4 className="text-center text-highlight">Projects</H4>
         <H2>My recent works</H2>
 
-        <div className="grid grid-cols-2 gap-18">
+        <div className="grid lg:grid-cols-2 gap-18 not-first:">
           <Exclusive />
           <Pathflow />
         </div>

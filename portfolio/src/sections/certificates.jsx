@@ -48,7 +48,7 @@ function CertificateBlock({ img, course }) {
       <img
         src={img}
         alt={course}
-        className="w-auto h-[400px] object-cover"
+        className="w-auto lg:h-[400px] h-[250px] object-cover"
       ></img>
     </div>
   );

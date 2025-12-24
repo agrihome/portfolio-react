@@ -48,7 +48,7 @@ export default function Skills() {
         <H2>
           Showcasing your talent <br /> amplifying your impact
         </H2>
-        <div className="mt-20 grid grid-cols-2">
+        <div className="mt-20 grid lg:grid-cols-2">
           <Experience
             startYear={"Mar"}
             endYear={"Nov 2025"}
@@ -57,7 +57,7 @@ export default function Skills() {
           />
         </div>
 
-        <div className="grid grid-cols-2 mt-20 gap-y-12 gap-x-5" id="skills">
+        <div className="grid md:grid-cols-2  mt-20 gap-y-12 gap-x-5" id="skills">
           {skills.map((skill) => (
             <SkillBlock skill={skill.skill} rating={skill.rating} />
           ))}

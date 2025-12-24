@@ -10,7 +10,7 @@ export default function Hero() {
     <Provider className="bg-background-primary">
       <section
         id="home"
-        className="pt-40 pb-20 grid grid-cols-2 gap-12 items-center"
+        className="pt-40 pb-20 grid lg:grid-cols-2 gap-12 items-center"
       >
         <div className=" flex flex-col justify-center gap-12 pr-2">
           <div>
@@ -28,7 +28,7 @@ export default function Hero() {
             captivate and engage.
           </Text>
 
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row gap-6">
             <Button>
               Download CV <Download className="w-4 h-4" />
             </Button>

@@ -5,7 +5,7 @@ import Provider from "../components/Provider";
 export default function Contact() {
   return (
     <Provider className="bg-background-secondary">
-      <section className="grid grid-cols-3 gap-5 py-20" id="contact">
+      <section className="grid xl:grid-cols-3 xl:gap-5 py-20 gap-10 " id="contact">
         <ContactBlock
           icon={AddressIcon}
           heading="Address"
