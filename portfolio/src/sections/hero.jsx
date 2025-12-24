@@ -14,12 +14,12 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
 
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
-  //   }, 1000);
-  //   return () => clearInterval(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <Provider className="bg-background-primary">
