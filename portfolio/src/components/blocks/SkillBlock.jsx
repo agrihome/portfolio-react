@@ -9,15 +9,15 @@ export default function SkillBlock({ skill, rating }) {
       <motion.div
         className="h-1.5 bg-highlight"
         initial={{ width: 0 }}
-        animate={{ width: `${(rating / 10) * 100}%` }}
+        whileInView={{ width: `${(rating / 10) * 100}%` }}
         transition={{
           duration: 1.5,
           ease: "easeInOut",
           delay: 0.2,
         }}
-        view={{
+        viewport={{
           once: true,
-          margin: "-150px 0px",
+          margin: "-50px 0px",
         }}
       ></motion.div>
     </div>
