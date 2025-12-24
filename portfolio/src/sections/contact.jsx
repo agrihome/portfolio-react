@@ -1,26 +1,36 @@
 import H4 from "../components/H4";
 import Text from "../components/Text";
 import Provider from "../components/Provider";
+import Reveal from "../components/Reveal";
 
 export default function Contact() {
   return (
     <Provider className="bg-background-secondary">
-      <section className="grid xl:grid-cols-3 xl:gap-5 py-20 gap-10 " id="contact">
-        <ContactBlock
-          icon={AddressIcon}
-          heading="Address"
-          value="22, 2nd maim road,Brindhavan Nagar, Chennai-600028"
-        />
-        <ContactBlock
-          icon={PhoneIcon}
-          heading="Let us talk"
-          value="+91 93614 00479"
-        />
-        <ContactBlock
-          icon={EmailIcon}
-          heading="Send me email"
-          value="rm.adhithan2002@gmail.com"
-        />
+      <section
+        className="grid xl:grid-cols-3 xl:gap-5 py-20 gap-10 "
+        id="contact"
+      >
+        <Reveal>
+          <ContactBlock
+            icon={AddressIcon}
+            heading="Address"
+            value="22, 2nd maim road,Brindhavan Nagar, Chennai-600028"
+          />
+        </Reveal>
+        <Reveal transition={{ delay: 0.2 }}>
+          <ContactBlock
+            icon={PhoneIcon}
+            heading="Let us talk"
+            value="+91 93614 00479"
+          />
+        </Reveal>
+        <Reveal transition={{ delay: 0.4 }}>
+          <ContactBlock
+            icon={EmailIcon}
+            heading="Send me email"
+            value="rm.adhithan2002@gmail.com"
+          />
+        </Reveal>
       </section>
     </Provider>
   );

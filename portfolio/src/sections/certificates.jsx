@@ -5,6 +5,7 @@ import Typescript from "../assets/typescript certificate.jpg";
 import Provider from "../components/Provider";
 import H4 from "../components/H4";
 import H2 from "../components/H2";
+import Reveal from "../components/Reveal";
 
 const certificates = [
   {
@@ -29,14 +30,18 @@ export default function Certificates() {
   return (
     <Provider className="bg-background-secondary">
       <section id="certificates" className="py-20 flex flex-col items-start">
-        <H4 className="text-center text-highlight">My certificates</H4>
-        <H2 className="mt-2 text-white">Courses that made me what I'm</H2>
+        <Reveal>
+          <H4 className="text-start text-highlight">My certificates</H4>
+          <H2 className="mt-2 text-white">Courses that made me what I'm</H2>
+        </Reveal>
 
-        <div className="flex justify-between gap-8 overflow-scroll w-full mt-18 hide-scrollbar">
-          {certificates.map((certificate) => {
-            return <CertificateBlock {...certificate} />;
-          })}
-        </div>
+        <Reveal transition={{ delay: 0.2 }} className="w-full">
+          <div className="flex justify-between gap-8 overflow-scroll w-full mt-18 hide-scrollbar">
+            {certificates.map((certificate) => {
+              return <CertificateBlock {...certificate} />;
+            })}
+          </div>
+        </Reveal>
       </section>
     </Provider>
   );

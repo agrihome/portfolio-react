@@ -8,21 +8,26 @@ import { Globe } from "lucide-react";
 import ExclusiveImg from "../assets/exclusive.png";
 import ExclusiveQR from "../assets/Exclusive QR.png";
 import PathflowImg from "../assets/Pathflow.png";
-
+import Reveal from "../components/Reveal";
 
 export default function Projects() {
   return (
     <Provider className="bg-background-primary">
       <section id="projects" className="py-20">
-
-        <div className="flex flex-col items-center">
-          <H4 className="text-center text-highlight">Projects</H4>
-          <H2 className="text-center text-white">My recent works</H2>
-        </div>
+        <Reveal>
+          <div className="flex flex-col items-center">
+            <H4 className="text-center text-highlight">Projects</H4>
+            <H2 className="text-center text-white">My recent works</H2>
+          </div>
+        </Reveal>
 
         <div className="grid lg:grid-cols-2 gap-18 not-first:">
-          <Exclusive />
-          <Pathflow />
+          <Reveal transition={{ delay: 0.2 }}>
+            <Exclusive />
+          </Reveal>
+          <Reveal transition={{ delay: 0.4 }}>
+            <Pathflow />
+          </Reveal>
         </div>
       </section>
     </Provider>
