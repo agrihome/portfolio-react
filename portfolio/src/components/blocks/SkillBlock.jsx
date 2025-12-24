@@ -17,7 +17,7 @@ export default function SkillBlock({ skill, rating }) {
         }}
         view={{
           once: true,
-          margin: "50px 0px",
+          margin: "-150px 0px",
         }}
       ></motion.div>
     </div>
