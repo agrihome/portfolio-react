@@ -38,7 +38,7 @@ export default function StaggerText({ children, className = "", delay = 0 }) {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-20px 0px" }}
+      viewport={{ once: true, margin: "-150px 0px" }}
       className={className}
     >
       {letters.map((letter, index) => (
@@ -46,7 +46,7 @@ export default function StaggerText({ children, className = "", delay = 0 }) {
           key={index}
           variants={childVariants}
           style={{ display: "inline-block", whiteSpace: "pre" }}
-          viewport={{ once: true, margin: "-20px 0px" }}
+          viewport={{ once: true, margin: "-150px 0px" }}
         >
           {letter}
         </motion.span>
