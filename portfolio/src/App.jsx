@@ -9,7 +9,7 @@ import Projects from "./sections/projects";
 
 function App() {
   return (
-    <div className="bg-background-primary overflow-hidden">
+    <div className="bg-background-primary overflow-hidden max-w-[1600px] mx-auto">
       <Header />
       <Hero />
       <Projects />

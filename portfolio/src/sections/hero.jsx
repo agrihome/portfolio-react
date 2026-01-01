@@ -13,7 +13,6 @@ const animatedList = ["DEVELOPER", "CODER", "PLAYER"];
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
-
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % animatedList.length);
@@ -60,11 +59,11 @@ export default function Hero() {
             </div>
 
             <Text>
-              I'm a passionate UI/UX designer with a mission to create
-              delightful and intuitive digital experiences. With a strong
-              foundation in design principles and a keen eye for detail, I
-              specialize in translating complex ideas into user-friendly
-              interfaces that captivate and engage.
+              I’m a Gen-AI Full-Stack Developer driven by a passion for building
+              intelligent, scalable, and user-centric digital products. I specialize in turning complex ideas into clean,
+              high-performance applications. My work blends thoughtful UI,
+              robust architecture, and AI-powered intelligence to create
+              seamless and impactful user experiences.
             </Text>
 
             <div className="flex flex-col sm:flex-row gap-6">

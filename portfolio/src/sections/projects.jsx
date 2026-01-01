@@ -7,7 +7,8 @@ import Button from "../components/Button";
 import { Globe } from "lucide-react";
 import ExclusiveImg from "../assets/exclusive.png";
 import ExclusiveQR from "../assets/Exclusive QR.png";
-import PathflowImg from "../assets/Pathflow.png";
+import FlowQR from "../assets/flowqr.png";
+import PathflowImg from "../assets/flow.png";
 import Reveal from "../components/Reveal";
 
 export default function Projects() {
@@ -42,9 +43,11 @@ function Exclusive() {
       </H3>
 
       <Text className="mt-8">
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit sed thisnquia consequuntur magni dolores eos qui ratione
-        voluptatem
+        Exclusive is a modern e-commerce frontend application built with
+        Next.js, Redux, and Tailwind CSS. It features a fully responsive,
+        scalable design system optimized for performance and usability. The
+        application is backend-agnostic and ready to integrate seamlessly with
+        any API or service.
       </Text>
 
       <img
@@ -79,15 +82,17 @@ function Exclusive() {
 
 function Pathflow() {
   return (
-    <div className="flex flex-col items-start mt-24 pr-2 blur-sm opacity-90">
+    <div className="flex flex-col items-start mt-24 pr-2 opacity-90">
       <H3 className="text-white">
-        <span className="font-bold">Pathflow</span>
+        <span className="font-bold">Flow</span>
       </H3>
 
       <Text className="mt-8">
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit sed thisnquia consequuntur magni dolores eos qui ratione
-        voluptatem
+        Flow is a habit and task management application under development
+        powered by with React JS, TypeScript, and Firebase. It features a
+        minimal, shadcn-style responsive UI with real-time data synchronization.
+        The app provides a structured system for paths, tasks, and daily
+        progress tracking, designed for scalability and consistency.
       </Text>
 
       <img
@@ -97,7 +102,7 @@ function Pathflow() {
       />
 
       <a
-        href="https://ecom-frontend-opal-ten.vercel.app/"
+        href="https://flow-five-alpha.vercel.app/"
         target="_blank"
         className="mt-6"
       >
@@ -111,7 +116,7 @@ function Pathflow() {
       <div className="flex items-center gap-6  h-max ">
         Scan QR code
         <img
-          src={ExclusiveQR}
+          src={FlowQR}
           alt="exclusive img screenshot"
           className="border border-white h-20 w-auto"
         />
