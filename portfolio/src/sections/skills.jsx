@@ -59,8 +59,10 @@ export default function Skills() {
             <Experience
               startYear={"Mar"}
               endYear={"Nov 2025"}
-              text="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem"
-              role="Software developer intern"
+              text="Worked on UI and GenAI full-stack development projects, utilizing Python, React, Next.js, Tailwind CSS, and related frameworks.
+Achieved GCP Cloud Digital Leader certification, demonstrating knowledge of cloud fundamentals and Google Cloud services.
+"
+              role="Software developer Intern @ Grid Dynamics"
             />
           </div>
         </Reveal>
