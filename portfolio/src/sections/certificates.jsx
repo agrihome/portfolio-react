@@ -6,6 +6,7 @@ import Provider from "../components/Provider";
 import H4 from "../components/H4";
 import H2 from "../components/H2";
 import Reveal from "../components/Reveal";
+import { useRef } from "react";
 
 const certificates = [
   {
@@ -27,6 +28,14 @@ const certificates = [
 ];
 
 export default function Certificates() {
+  const scrollRef = useRef(null);
+
+  const handleWheel = (e) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft += e.deltaY;
+    }
+  };
+
   return (
     <Provider className="bg-background-secondary">
       <section id="certificates" className="py-20 flex flex-col items-start">
@@ -36,9 +45,13 @@ export default function Certificates() {
         </Reveal>
 
         <Reveal transition={{ delay: 0.2 }} className="w-full">
-          <div className="flex justify-between gap-8 overflow-scroll w-full mt-18 hide-scrollbar">
+          <div
+            ref={scrollRef}
+            onWheel={handleWheel}
+            className="flex justify-start gap-8 overflow-x-auto w-full mt-18 hide-scrollbar flex-nowrap"
+          >
             {certificates.map((certificate) => {
-              return <CertificateBlock {...certificate} />;
+              return <CertificateBlock key={certificate.course} {...certificate} />;
             })}
           </div>
         </Reveal>
