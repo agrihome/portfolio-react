@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <Provider>
       <div
-        className={`flex items-center justify-between z-50 bg-background-header top-0 fixed md:w-[calc(100%-10rem)]  w-[calc(100%-40px)] `}
+        className={`flex items-center justify-between z-50 bg-background-header top-0 fixed md:w-[calc(100%-10rem)]  w-[calc(100%-40px)] max-w-[1440px]`}
       >
         <span className=" text-white flex items-center gap-6 text-4xl font-bold">
           <img src={logo} alt="Logo" className="w-20 h-20" />

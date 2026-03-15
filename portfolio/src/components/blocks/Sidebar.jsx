@@ -14,7 +14,7 @@ const navLinks = [
 
 const projectLinks = [
   { name: "Exclusive", href: "https://ecom-frontend-opal-ten.vercel.app/" },
-  { name: "Pathflow", href: "#https://ecom-frontend-opal-ten.vercel.app/" },
+  { name: "Pathflow", href: "https://flow-five-alpha.vercel.app/" },
 ];
 
 export default function Sidebar({ isOpen, onClose }) {
