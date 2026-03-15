@@ -67,9 +67,13 @@ export default function Hero() {
             </Text>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button>
-                Download CV <Download className="w-4 h-4" />
-              </Button>
+              <a href="https://docs.google.com/document/d/1f9C4c_qAx2B0XXI94aZfPi5zQYVHHSGVPyERg7TCHgQ/edit?usp=sharing" target="_blank">
+                <Button>
+                  Download CV <Download className="w-4 h-4" />
+                </Button>
+              </a>
+
+
 
               <button className="bg-background-primary flex gap-2 items-center justify-center px-6 py-3 transition-all duration-300 hover:opacity-80">
                 <span className="w-10 h-10 bg-highlight flex items-center justify-center rounded-full">
